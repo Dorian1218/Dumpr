@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const http = require("http");
 const { Server } = require("socket.io");
-const cors = require('cors')
+const cors = require('cors');
+const { Console } = require('console');
 
 app.use(cors());
 
@@ -14,6 +15,10 @@ const io = new Server(server, {
         methods: ["GET", "POST"],
     },
 });
+
+io.on("connection", (socket) => {
+    console.log(socket.id)
+})
 
 server.listen(3001, () => {
     console.log("SERVER IS RUNNING")
