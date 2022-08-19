@@ -8,7 +8,13 @@ import {
   HelpOutline,
   WorkOutline,
   Event,
-  School,
+  Computer,
+  Weekend,
+  Man,
+  Woman,
+  ChildFriendly,
+  Checkroom,
+  DirectionsCar,
 } from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
@@ -20,31 +26,35 @@ export default function Sidebar() {
         <ul className="sidebarList">
 
           <li className="sidebarListItem">
-            <span className="sidebarListItemText">Brands You Like:</span>
+            <span className="sidebarListItemText">Categories:</span>
           </li>
           <li className="sidebarListItem">
-            <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Adidas</span>
+            <Man className="sidebarIcon" />
+            <span className="sidebarListItemText">Men</span>
           </li>
           <li className="sidebarListItem">
-            <WorkOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Nike</span>
+            <Woman className="sidebarIcon" />
+            <span className="sidebarListItemText">Women</span>
           </li>
           <li className="sidebarListItem">
-            <Event className="sidebarIcon" />
-            <span className="sidebarListItemText">Xbox</span>
+            <ChildFriendly className="sidebarIcon" />
+            <span className="sidebarListItemText">Kids</span>
           </li>
           <li className="sidebarListItem">
-            <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Apple</span>
+            <Checkroom className="sidebarIcon" />
+            <span className="sidebarListItemText">Clothing</span>
           </li>
           <li className="sidebarListItem">
-            <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Beats</span>
+            <Weekend className="sidebarIcon" />
+            <span className="sidebarListItemText">Home</span>
           </li>
           <li className="sidebarListItem">
-            <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Logitech</span>
+            <Computer className="sidebarIcon" />
+            <span className="sidebarListItemText">Technology</span>
+          </li>
+          <li className="sidebarListItem">
+            <DirectionsCar className="sidebarIcon" />
+            <span className="sidebarListItemText">Vehicles</span>
           </li>
         </ul>
         <hr className="sidebarHr" />

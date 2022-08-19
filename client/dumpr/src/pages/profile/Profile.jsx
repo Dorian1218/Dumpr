@@ -1,7 +1,7 @@
 import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Feed from "../../components/feed/Feed";
+import Userfeed from "../../components/userfeed/userFeed";
 import Rightbar from "../../components/rightbar/Rightbar";
 
 export default function Profile() {
@@ -26,7 +26,7 @@ export default function Profile() {
             </div>
           </div>
           <div className="profileRightBottom">
-            <Feed />
+            <Userfeed />
             <Rightbar profile/>
           </div>
         </div>

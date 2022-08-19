@@ -16,11 +16,11 @@ export default function Share() {
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">
-                    <AddToPhotos htmlColor="#ffbf00" className="shareIcon"/>
+                    <AddToPhotos htmlColor="#000" className="shareIcon"/>
                     <span className="shareOptionText">Photo or Video</span>
                 </div>
                 <div className="shareOption">
-                    <Upload htmlColor="#ffbf00" className="shareIcon"/>
+                    <Upload htmlColor="#000" className="shareIcon"/>
                     <span className="shareOptionText">Post</span>
                 </div>
             </div>

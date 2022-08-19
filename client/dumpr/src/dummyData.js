@@ -16,7 +16,7 @@ export const Users = [
     },
     {
       id:4,
-      profilePicture: "assets/nico.jpg",
+      profilePicture: "assets/niko.jpg",
       username: "Nico Nico",
     },
     {
@@ -56,7 +56,52 @@ export const Users = [
       id:1,
       profilePicture: "assets/person/Mo.jpg",
       username: "Mohameth Seck",
-    }
+    },
+    {
+      id:2,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:3,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:4,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:5,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:6,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:7,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:8,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:9,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
+    {
+      id:10,
+      profilePicture: "assets/person/Mo.jpg",
+      username: "Mohameth Seck",
+    },
   ]
   
   export const Posts = [
@@ -152,7 +197,7 @@ export const Users = [
     },
   ];
 
-  export const Myposts = [
+  export const myPosts = [
     {
       id: 1,
       desc: "Apple Bundle: Macbook Pro, Magic Keyboard & Magic Mouse | Mildly Used | $1,000",

@@ -9,12 +9,8 @@ export default function Rightbar({ profile }) {
         <div className="birthdayContainer">
         </div>
         <img className="rightbarAd" src="assets/ad.png" alt="" />
-        <h4 className="rightbarTitle">Sellers With Listings You May Like:</h4>
-        <ul className="rightbarFriendList">
-          {Users.map((u) => (
-            <Online key={u.id} user={u} />
-          ))}
-        </ul>
+        <img className="rightbarAd" src="assets/audi-ad.webp" alt="" />
+        <img className="rightbarAd" src="assets/pizza-ad.jpg" alt="" />
       </>
     );
   };

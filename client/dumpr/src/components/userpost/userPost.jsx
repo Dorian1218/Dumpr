@@ -1,16 +1,14 @@
 import "./post.css";
 import { MoreVert } from "@mui/icons-material";
-import { mainUser } from "../../dummyData";
+import { Users } from "../../dummyData";
 import { useState } from "react";
 
 export default function Post({ post }) {
   const [like,setLike] = useState(post.like)
   const [isLiked,setIsLiked] = useState(false)
-  // const [save, setSaved] = useState("")
 
   const likeHandler =()=>{
-    // setLike(isLiked ? like-1 : like+1)
-    setLike(isLiked ? "" : "saved")
+    setLike(isLiked ? like-1 : like+1)
     setIsLiked(!isLiked)
   }
   return (
@@ -20,11 +18,11 @@ export default function Post({ post }) {
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src={mainUser.filter((u) => u.id === post?.userId)[0].profilePicture}
+              src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
               alt=""
             />
             <span className="postUsername">
-              {mainUser.filter((u) => u.id === post?.userId)[0].username}
+              {Users.filter((u) => u.id === post?.userId)[0].username}
             </span>
             <span className="postDate">{post.date}</span>
           </div>
