@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  return <Profile/>;
+  return <Home/>;
 }
 
 export default App;

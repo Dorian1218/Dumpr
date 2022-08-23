@@ -10,7 +10,7 @@ export default function Post({ post }) {
 
   const likeHandler =()=>{
     // setLike(isLiked ? like-1 : like+1)
-    setLike(isLiked ? "" : "saved")
+    setLike(isLiked ? "" : "Saved")
     setIsLiked(!isLiked)
   }
   return (
@@ -40,7 +40,7 @@ export default function Post({ post }) {
           <div className="postBottomLeft">
             <img className="likeIcon" src="assets/bookmark.webp" onClick={likeHandler} alt="" />
             <img className="likeIcon" src="assets/send.png" onClick={likeHandler} alt="" />
-            <span className="postLikeCounter">{like} Have This Listing Saved</span>
+            <span className="postLikeCounter">{like}</span>
           </div>
         </div>
       </div>
