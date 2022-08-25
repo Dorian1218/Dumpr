@@ -1,11 +1,14 @@
 import "./topbar.css";
 import { Search, Bookmark, Chat, Notifications } from "@mui/icons-material";
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
+        <Link to="/Home">
         <span className="logo">Dumpr.</span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -28,7 +31,9 @@ export default function Topbar() {
             <Notifications />
           </div>
         </div>
+        <Link to="/Profile">
         <img src="/assets/person/Mo.jpg" alt="" className="topbarImg"/>
+        </Link>
       </div>
     </div>
   );

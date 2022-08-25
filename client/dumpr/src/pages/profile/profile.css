@@ -1,5 +1,6 @@
 .profile{
     display: flex;
+    background-color: white;
 }
 
 .profileRight{
@@ -47,4 +48,8 @@
 
 .profileRightBottom{
     display: flex;
+}
+
+.style {
+    background-color: white;
 }
