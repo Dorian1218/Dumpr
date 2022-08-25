@@ -13,8 +13,8 @@ export default function Welcome() {
         </div>
 
         <div className="c-button" style={{ width: "100%", marginTop: "2%", marginLeft: "70%" }}>
-          <Button variant="outline-dark">Sign In</Button>
-          <Button variant="outline-dark">Sign Up</Button>
+          <Link to="/signin"><Button variant="outline-dark">Sign In</Button></Link>
+          <Link to="/signup"><Button variant="outline-dark">Sign Up</Button></Link>
         </div>
 
 
