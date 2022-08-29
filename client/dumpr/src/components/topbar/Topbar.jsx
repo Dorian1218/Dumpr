@@ -1,8 +1,11 @@
 import "./topbar.css";
 import { Search, Bookmark, Chat, Notifications } from "@mui/icons-material";
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import { Dashboard } from "../dashboard/Dashboard"
+import { UserAuth } from "../../context/UserContext";
 
 export default function Topbar() {
+  const {user} = UserAuth()
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
@@ -25,7 +28,7 @@ export default function Topbar() {
             <Bookmark />
           </div>
           <div className="topbarIconItem">
-            <Chat />
+            <Link to="/chat"><Chat/></Link>
           </div>
           <div className="topbarIconItem">
             <Notifications />

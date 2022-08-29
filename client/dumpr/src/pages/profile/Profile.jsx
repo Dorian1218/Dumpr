@@ -1,15 +1,24 @@
 import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
-import Sidebar from "../../components/sidebar/Sidebar";
 import Userfeed from "../../components/userfeed/userFeed";
 import Rightbar from "../../components/rightbar/Rightbar";
+import { Button } from "react-bootstrap";
+import { UserAuth } from "../../context/UserContext";
+import { useNavigate } from "react-router-dom";
+import SidebarMain from "../../components/sidebar/SidebarMain";
 
 export default function Profile() {
+  const {logout} = UserAuth()
+  const navigate = useNavigate()
+  const handleLogout = () => {
+    logout()
+    navigate('/')
+  }
   return (
     <>
       <Topbar />
       <div className="profile">
-        <Sidebar />
+        <SidebarMain />
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
@@ -30,6 +39,9 @@ export default function Profile() {
             <Rightbar profile/>
           </div>
         </div>
+      </div>
+      <div style={{display: "flex", justifyContent: "center"}}>
+      <Button onClick={handleLogout} variant="danger">Logout</Button>
       </div>
     </>
   );
